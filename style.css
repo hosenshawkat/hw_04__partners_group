@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: Times New Roman;
+  font-size: 60px;
+  align-items: top;
+}
+section {
+  background: #f2f4f3;
+  height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-nav a {
+  color: #f6f7f8;
+  background: rgb(0,100,0);
+  height: 64px;
+  font-family: lato;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.4s;
+}
+#main-nav a:hover {
+  background: #305753;
+}
+
+#main-nav {
+}
+
+#main-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+#main-nav li {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#main-nav li:hover .submenu > li {
+  display: block;
+  flex-direction: column;
+  top: 0px;
+}
+
+.submenu li {
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.submenu li:hover .submenu-2 li {
+  display: block;
+}
+
+.submenu-2 li {
+  display: none;
+}
+
+.arrow {
+  margin-left: 8px;
+  color: #eee;
+  font-size: 12px;
+}
+
+
+header{
+  
+  min-height: 100px;
+  color: black;
+  background-color: red;
+}
+.wrapper{
+  overflow: hidden;
+  border: 5px solid teal;
+}
+.blog{
+  background-image: url('partners.jpg');
+  min-height: 500px;
+  background-color: #7ABEE7;
+  width: 70%;
+  float: left;
+  text-align: center;
+  font-size: 100px;
+}
+
+
+.contact{
+  min-height: 500px;
+  background-color: #E2B7EE;
+  width: 30%;
+  float: right;
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer{
+  min-height: 100px;
+  background-color: #B57737;
+   text-align: center;
+  font-size: 40px;
+  color: black;
+
+}
+
